@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dam-q2-Jhn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RunLoop-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHl-ZW-ihA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="376-kc-xXF"/>
+                                    <constraint firstAttribute="height" constant="44" id="VcU-Un-FOi"/>
+                                </constraints>
+                                <state key="normal" title="子线程和主线程表现"/>
+                                <connections>
+                                    <segue destination="61f-7b-X0p" kind="show" id="00b-6Y-tEk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkS-2Y-RfN">
+                                <rect key="frame" x="0.0" y="108" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="1Cz-Pe-eKY"/>
+                                    <constraint firstAttribute="height" constant="44" id="BLt-0e-RtS"/>
+                                </constraints>
+                                <state key="normal" title="RunLoop的休眠与唤醒"/>
+                                <connections>
+                                    <segue destination="j5t-kH-onD" kind="show" id="OxI-eM-Qbd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHZ-kp-J45">
+                                <rect key="frame" x="0.0" y="152" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hes-5L-EXW"/>
+                                </constraints>
+                                <state key="normal" title="Timer事件和监听"/>
+                                <connections>
+                                    <segue destination="Hf1-tT-gvJ" kind="show" id="Atg-JS-rCk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rHl-ZW-ihA" secondAttribute="trailing" id="1CA-wg-gNa"/>
+                            <constraint firstAttribute="trailing" secondItem="WHZ-kp-J45" secondAttribute="trailing" id="1cp-xM-Ukh"/>
+                            <constraint firstItem="rHl-ZW-ihA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3iD-YH-DVm"/>
+                            <constraint firstItem="IkS-2Y-RfN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8TJ-he-Qi3"/>
+                            <constraint firstItem="IkS-2Y-RfN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gz9-Wh-xzZ"/>
+                            <constraint firstItem="rHl-ZW-ihA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Hag-Qp-7EN"/>
+                            <constraint firstItem="IkS-2Y-RfN" firstAttribute="top" secondItem="rHl-ZW-ihA" secondAttribute="bottom" id="J0V-r0-F7k"/>
+                            <constraint firstAttribute="trailing" secondItem="IkS-2Y-RfN" secondAttribute="trailing" id="RkQ-pr-xuw"/>
+                            <constraint firstItem="IkS-2Y-RfN" firstAttribute="top" secondItem="rHl-ZW-ihA" secondAttribute="bottom" id="YWb-AC-pov"/>
+                            <constraint firstItem="WHZ-kp-J45" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cp5-cG-KJf"/>
+                            <constraint firstAttribute="trailing" secondItem="rHl-ZW-ihA" secondAttribute="trailing" id="eBO-GU-Re3"/>
+                            <constraint firstItem="rHl-ZW-ihA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eeD-wv-ZtE"/>
+                            <constraint firstItem="rHl-ZW-ihA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ghQ-Oz-84A"/>
+                            <constraint firstAttribute="trailing" secondItem="IkS-2Y-RfN" secondAttribute="trailing" id="loy-Ht-xeb"/>
+                            <constraint firstItem="WHZ-kp-J45" firstAttribute="top" secondItem="IkS-2Y-RfN" secondAttribute="bottom" id="p5b-WA-IvM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="RunLoop" id="xqh-Or-Xha"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="-546"/>
+        </scene>
+        <!--子线程与主线程对比-->
+        <scene sceneID="PQK-Ol-x0S">
+            <objects>
+                <viewController title="子线程与主线程对比" id="61f-7b-X0p" customClass="ContrastViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1j1-ua-gf3"/>
+                        <viewControllerLayoutGuide type="bottom" id="z2S-07-Uxt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hkM-3n-iXq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd5-2I-3Hc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Z5Q-eW-5Jm"/>
+                                </constraints>
+                                <state key="normal" title="主线程RunLoop"/>
+                                <connections>
+                                    <action selector="mainThread:" destination="61f-7b-X0p" eventType="touchUpInside" id="LcV-Z3-PcP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ia-P1-sTw">
+                                <rect key="frame" x="0.0" y="106" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Xdb-hO-3Dq"/>
+                                </constraints>
+                                <state key="normal" title="次线程RunLoop"/>
+                                <connections>
+                                    <action selector="subThread:" destination="61f-7b-X0p" eventType="touchUpInside" id="Dtl-Wk-R7e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSd-vS-sUM">
+                                <rect key="frame" x="0.0" y="150" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iVV-UG-BT1"/>
+                                </constraints>
+                                <state key="normal" title="点击测试"/>
+                                <connections>
+                                    <action selector="test:" destination="61f-7b-X0p" eventType="touchUpInside" id="GDS-jr-2mE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qSd-vS-sUM" firstAttribute="leading" secondItem="hkM-3n-iXq" secondAttribute="leading" id="0aN-Zm-z22"/>
+                            <constraint firstItem="Fd5-2I-3Hc" firstAttribute="top" secondItem="1j1-ua-gf3" secondAttribute="bottom" id="3wi-u0-Avs"/>
+                            <constraint firstItem="8Ia-P1-sTw" firstAttribute="top" secondItem="1j1-ua-gf3" secondAttribute="bottom" constant="42" id="Bpa-6c-Akp"/>
+                            <constraint firstAttribute="trailing" secondItem="qSd-vS-sUM" secondAttribute="trailing" id="Cbj-UJ-NV1"/>
+                            <constraint firstItem="8Ia-P1-sTw" firstAttribute="leading" secondItem="hkM-3n-iXq" secondAttribute="leading" id="E36-C0-1AY"/>
+                            <constraint firstItem="Fd5-2I-3Hc" firstAttribute="leading" secondItem="hkM-3n-iXq" secondAttribute="leading" id="QCL-lU-Ypm"/>
+                            <constraint firstAttribute="trailing" secondItem="Fd5-2I-3Hc" secondAttribute="trailing" id="opP-mS-I3c"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ia-P1-sTw" secondAttribute="trailing" id="rP0-rE-tYx"/>
+                            <constraint firstItem="qSd-vS-sUM" firstAttribute="top" secondItem="8Ia-P1-sTw" secondAttribute="bottom" id="w1A-rj-a2H"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoV-my-HyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096.8000000000002" y="-1249.0254872563719"/>
+        </scene>
+        <!--RunLoop的休眠与唤醒-->
+        <scene sceneID="cYL-Hz-cO3">
+            <objects>
+                <viewController title="RunLoop的休眠与唤醒" id="j5t-kH-onD" customClass="RunLoopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7sB-su-e32"/>
+                        <viewControllerLayoutGuide type="bottom" id="mbX-Rv-jOD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eMx-iJ-CM5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-Zb-N3V">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.50998915637914799" green="1" blue="0.56961999443080713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="puV-fk-knE"/>
+                                </constraints>
+                                <state key="normal" title="创建"/>
+                                <connections>
+                                    <action selector="createRunLoop:" destination="j5t-kH-onD" eventType="touchUpInside" id="oSG-al-Dcj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dZ-AT-wwB">
+                                <rect key="frame" x="0.0" y="107" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.78107422286364259" blue="0.88366326255113703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="evE-4H-R4Q"/>
+                                </constraints>
+                                <state key="normal" title="唤醒"/>
+                                <connections>
+                                    <action selector="wakeUpRunLoop:" destination="j5t-kH-onD" eventType="touchUpInside" id="JVU-cP-yI9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80I-3K-ghD">
+                                <rect key="frame" x="0.0" y="149" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="34I-0P-PaA"/>
+                                </constraints>
+                                <state key="normal" title="休眠"/>
+                                <connections>
+                                    <action selector="stopRunLoop:" destination="j5t-kH-onD" eventType="touchUpInside" id="dGC-EJ-WmA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="80I-3K-ghD" secondAttribute="trailing" id="7qu-fW-Ouf"/>
+                            <constraint firstItem="80I-3K-ghD" firstAttribute="leading" secondItem="eMx-iJ-CM5" secondAttribute="leading" id="8EH-wP-mlf"/>
+                            <constraint firstAttribute="trailing" secondItem="U6T-Zb-N3V" secondAttribute="trailing" id="FW1-Pl-hg7"/>
+                            <constraint firstItem="80I-3K-ghD" firstAttribute="top" secondItem="U6T-Zb-N3V" secondAttribute="bottom" constant="41" id="GOM-7l-xO2"/>
+                            <constraint firstItem="9dZ-AT-wwB" firstAttribute="top" secondItem="7sB-su-e32" secondAttribute="bottom" constant="43" id="Hly-o5-Amf"/>
+                            <constraint firstItem="U6T-Zb-N3V" firstAttribute="leading" secondItem="eMx-iJ-CM5" secondAttribute="leading" id="I0q-hK-Rzh"/>
+                            <constraint firstAttribute="trailing" secondItem="9dZ-AT-wwB" secondAttribute="trailing" id="kkL-5p-wPj"/>
+                            <constraint firstItem="U6T-Zb-N3V" firstAttribute="top" secondItem="7sB-su-e32" secondAttribute="bottom" id="oO1-0i-j8g"/>
+                            <constraint firstItem="9dZ-AT-wwB" firstAttribute="leading" secondItem="eMx-iJ-CM5" secondAttribute="leading" id="pJP-5E-WNn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6l-Pv-V9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096.8000000000002" y="-546.47676161919048"/>
+        </scene>
+        <!--Timer事件和监听-->
+        <scene sceneID="yRg-zB-f6W">
+            <objects>
+                <viewController title="Timer事件和监听" id="Hf1-tT-gvJ" customClass="Observer_TimerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qA5-ls-iZO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zl0-sa-INL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FPC-Sg-WmD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxx-sQ-hnX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gWV-M5-6xx"/>
+                                </constraints>
+                                <state key="normal" title="添加时间、监听"/>
+                                <connections>
+                                    <action selector="addTimer_Observer:" destination="Hf1-tT-gvJ" eventType="touchUpInside" id="ZWZ-YD-XLv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq3-vT-6SS">
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.55647420321171881" green="0.9994240403175354" blue="0.49596775517118252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7VI-T6-A7z"/>
+                                </constraints>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stop:" destination="Hf1-tT-gvJ" eventType="touchUpInside" id="CUE-15-T1i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dq3-vT-6SS" secondAttribute="trailing" id="AJR-5k-eMl"/>
+                            <constraint firstItem="dq3-vT-6SS" firstAttribute="top" secondItem="bxx-sQ-hnX" secondAttribute="bottom" constant="8" id="LSU-fd-WZf"/>
+                            <constraint firstAttribute="trailing" secondItem="bxx-sQ-hnX" secondAttribute="trailing" id="PQ9-Ln-QbX"/>
+                            <constraint firstItem="bxx-sQ-hnX" firstAttribute="top" secondItem="qA5-ls-iZO" secondAttribute="bottom" id="qdO-Yn-NfX"/>
+                            <constraint firstItem="dq3-vT-6SS" firstAttribute="leading" secondItem="FPC-Sg-WmD" secondAttribute="leading" id="w9m-Hc-qRy"/>
+                            <constraint firstItem="bxx-sQ-hnX" firstAttribute="leading" secondItem="FPC-Sg-WmD" secondAttribute="leading" id="wpn-wV-SjR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdv-eg-zpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096.8000000000002" y="143.47826086956522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X9z-51-UI2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dam-q2-Jhn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fba-f1-vem">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qTU-pN-zsy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfo-w8-CEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="-545.57721139430294"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+</document>
